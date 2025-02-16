@@ -8,8 +8,7 @@ load_dotenv()
 import mlflow
 
 mongo_db_url = os.getenv("MONGO_DB_URL")
-mlflow.set_tracking_uri(f"https://{os.getenv('MLFLOW_TRACKING_USERNAME')}:{os.getenv('MLFLOW_TRACKING_PASSWORD')}@"
-                        f"{os.getenv('MLFLOW_TRACKING_URI').replace('https://', '')}")
+mlflow.set_tracking_uri(f"https://{os.getenv('MLFLOW_TRACKING_USERNAME')}:{os.getenv('MLFLOW_TRACKING_PASSWORD')}@"f"{os.getenv('MLFLOW_TRACKING_URI')}")
 print(mlflow.get_tracking_uri())
 
 
