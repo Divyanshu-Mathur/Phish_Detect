@@ -15,8 +15,8 @@ from sklearn.neighbors import KNeighborsClassifier
 from xgboost import XGBClassifier
 from network_security.utils.main_utils.utils import evaluate_model
 import mlflow
-import dagshub
-dagshub.init(repo_owner='Divyanshu-Mathur', repo_name='Phish_Detect', mlflow=True)
+# import dagshub
+# dagshub.init(repo_owner='Divyanshu-Mathur', repo_name='Phish_Detect', mlflow=True)
 
 
 class ModelTrainer :
