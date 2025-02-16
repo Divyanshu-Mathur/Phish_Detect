@@ -1,0 +1,11 @@
+[ 2025-02-16 11:01:18,439 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-02-16 11:01:18,446 ] 107 dagshub - INFO - Accessing as Divyanshu-Mathur
+[ 2025-02-16 11:01:19,419 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Divyanshu-Mathur/Phish_Detect "HTTP/1.1 200 OK"
+[ 2025-02-16 11:01:20,381 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-02-16 11:01:20,384 ] 107 dagshub - INFO - Initialized MLflow to track repo "Divyanshu-Mathur/Phish_Detect"
+[ 2025-02-16 11:01:20,385 ] 107 dagshub - INFO - Repository Divyanshu-Mathur/Phish_Detect initialized!
+[ 2025-02-16 11:01:21,897 ] 114 fastapi - ERROR - Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+

@@ -7,6 +7,8 @@ from network_security.components.data_transformation import DataTransformation
 import os,sys
 from network_security.entity.config_entity import ModelTrainerConfig
 from network_security.components.model_trainer import ModelTrainer
+import warnings
+warnings.filterwarnings('ignore')
 
 
 

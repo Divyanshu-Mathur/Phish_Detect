@@ -1,0 +1,31 @@
+[ 2025-02-16 10:14:39,788 ] 1025 httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 200 OK"
+[ 2025-02-16 10:14:40,417 ] 1025 httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/access_token "HTTP/1.1 200 OK"
+[ 2025-02-16 10:14:41,007 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-02-16 10:14:41,014 ] 107 dagshub - INFO - Accessing as Divyanshu-Mathur
+[ 2025-02-16 10:14:41,584 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Divyanshu-Mathur/Phish_Detect "HTTP/1.1 200 OK"
+[ 2025-02-16 10:14:42,128 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-02-16 10:14:42,131 ] 107 dagshub - INFO - Initialized MLflow to track repo "Divyanshu-Mathur/Phish_Detect"
+[ 2025-02-16 10:14:42,132 ] 107 dagshub - INFO - Repository Divyanshu-Mathur/Phish_Detect initialized!
+[ 2025-02-16 10:14:42,132 ] 20 root - INFO - Started data Ingestion
+[ 2025-02-16 10:14:42,310 ] 96 pymongo.serverSelection - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "find", "topologyDescription": "<TopologyDescription id: 67b16d3ad17935addc5ecec1, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.78hnf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.78hnf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.78hnf.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "67b16d3ad17935addc5ecec1"}, "remainingTimeMS": 29}
+[ 2025-02-16 10:14:49,558 ] 61 root - INFO - Performed train test split on the dataframe
+[ 2025-02-16 10:14:49,558 ] 63 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-02-16 10:14:49,558 ] 71 root - INFO - Exporting train and test file path.
+[ 2025-02-16 10:14:49,600 ] 80 root - INFO - Exported train and test file path.
+[ 2025-02-16 10:14:49,600 ] 22 root - INFO - Data ingestion Completed 
+[ 2025-02-16 10:14:49,606 ] 26 root - INFO - Data Validation initiated
+[ 2025-02-16 10:14:49,626 ] 32 root - INFO - Required number of columns:2
+[ 2025-02-16 10:14:49,626 ] 33 root - INFO - Data frame has columns:31
+[ 2025-02-16 10:14:49,626 ] 32 root - INFO - Required number of columns:2
+[ 2025-02-16 10:14:49,626 ] 33 root - INFO - Data frame has columns:31
+[ 2025-02-16 10:14:49,729 ] 28 root - INFO - Data Validation Completed
+[ 2025-02-16 10:14:49,730 ] 31 root - INFO - data Transformation started
+[ 2025-02-16 10:14:49,730 ] 36 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2025-02-16 10:14:49,730 ] 38 root - INFO - Starting data transformation
+[ 2025-02-16 10:14:49,749 ] 26 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-02-16 10:14:49,765 ] 35 root - INFO - data Transformation completed
+[ 2025-02-16 10:14:49,765 ] 36 root - INFO - Model Training sstared
+[ 2025-02-16 10:18:09,107 ] 98 root - INFO - Best model is XGB
+[ 2025-02-16 10:18:09,107 ] 99 root - INFO - Best score is 0.9733152419719584
+[ 2025-02-16 10:18:29,633 ] 119 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\02_16_2025_10_14_21\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9880940266612395, precision_score=0.9843876723438767, recall_score=0.9918283963227783), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9766706207987347, precision_score=0.9747434885556433, recall_score=0.9786053882725833))
+[ 2025-02-16 10:18:29,636 ] 41 root - INFO - Model Training artifact created
