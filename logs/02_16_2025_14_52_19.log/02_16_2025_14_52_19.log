@@ -1,0 +1,6 @@
+[ 2025-02-16 14:52:21,210 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-02-16 14:52:21,215 ] 107 dagshub - INFO - Accessing as Divyanshu-Mathur
+[ 2025-02-16 14:52:21,787 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Divyanshu-Mathur/Phish_Detect "HTTP/1.1 200 OK"
+[ 2025-02-16 14:52:22,301 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-02-16 14:52:22,306 ] 107 dagshub - INFO - Initialized MLflow to track repo "Divyanshu-Mathur/Phish_Detect"
+[ 2025-02-16 14:52:22,307 ] 107 dagshub - INFO - Repository Divyanshu-Mathur/Phish_Detect initialized!
