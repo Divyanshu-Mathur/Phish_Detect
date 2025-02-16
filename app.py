@@ -5,6 +5,12 @@ ca = certifi.where()
 from dotenv import load_dotenv
 load_dotenv()
 
+import mlflow
+
+mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI"))
+mlflow.login(username=os.getenv("MLFLOW_TRACKING_USERNAME"), password=os.getenv("MLFLOW_TRACKING_PASSWORD"))
+
+
 mongo_db_url = os.getenv("MONGO_DB_URL")
 print(mongo_db_url)
 import pymongo
